@@ -12,4 +12,13 @@ class TasksController < ApplicationController
   def show
     @task = Task.find(params[:id])
   end
+
+  def hello
+    redirect_to(:action => 'index')
+  end
+
+   def hello_world
+     redirect_to('http://www.google.com')
+   end
+
 end
